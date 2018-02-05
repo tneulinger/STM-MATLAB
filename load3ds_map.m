@@ -30,11 +30,6 @@ function [header, mapStructure] = load3ds_map(fileName)
 % subplot(1,3,2); imagesc(mapStructure.lockinX(:,:,1));
 % subplot(1,3,3); image(fftshift(abs(fft2(mapStructure.lockinX(:,:,1)))));
 
-% Tom Neulinger | neulingert@gmail.com
-% 07/12/2017 - created
-% 07/24/2017 - added header.bias field
-
-
 
 % open the file for reading using big-endian
 fid = fopen(fileName, 'r', 'ieee-be');
